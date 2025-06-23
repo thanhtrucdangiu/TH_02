@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+   <style>
     .video-container {
       width: 100%;
       max-width: 600px;
-      margin: 40px auto; 
+      margin: 40px auto;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     iframe {
       width: 100%;
-      height: 500px;
-      border-radius: 10px;
+      height: 340px;
+      border: none;
     }
-    </style>
+  </style>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/R60WMJNoGsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    
-</iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/R60WMJNoGsk" allowfullscreen></iframe>
+  </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ajEpUnYK5Hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/ajEpUnYK5Hw" allowfullscreen></iframe>
+  </div>
 
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/U5bY_IjhYGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/U5bY_IjhYGg" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
