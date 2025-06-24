@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Bàn</title>
+  <style>
+    body {
+      background-color: #ffe9ec;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: white;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #c94f7c;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #f8c5d6;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #c94f7c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a03c61;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Yêu Cầu Đặt Bàn</h1>
+    <form>
+      <label for="date">Chọn ngày:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Chọn giờ:</label>
+      <input type="time" id="time" name="time" required>
+
+     <label for="people">Số người:</label>
+    <input type="number" id="people" name="people" min="1" max="50" required >
+
+
+      <label for="note">Yêu cầu đặc biệt:</label>
+      <textarea id="note" name="note" rows="4" placeholder="Ghi chú"></textarea>
+
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+  </div>
+
+</body>
+</html>
