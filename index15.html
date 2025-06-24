@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+      background-color: rgb(246, 219, 223);
+      font-family: sans-serif;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: 50px auto;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    textarea, input [type="text"], input[type="email"] {
+      width: 100%;
+      padding: 2px;
+      border-radius: 5px;
+      border: 2px solid rgb(246, 167, 180);
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      width: auto;
+    }
+
+    .pttt {
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(233, 52, 142);
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: deeppink;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>THANH TOÁN</h2>
+
+    <label>Địa chỉ:</label>
+    <textarea rows="3" placeholder="Nhập địa chỉ"></textarea>
+
+    <label>Phương thức thanh toán:</label>
+    <div class="pttt">
+      <label><input type="radio" name="pt" value="cod"> COD</label>
+      <label><input type="radio" name="pt" value="bank"> Chuyển khoản</label>
+      <label><input type="radio" name="pt" value="momo"> Momo</label>
+    </div>
+
+    </div>
+
+    <button type="submit">THANH TOÁN</button>
+  </form>
+</body>
+</html>
