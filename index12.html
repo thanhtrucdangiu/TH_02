@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát mua sắm</title>
+    <style>
+        body {
+            background-color: rgb(247, 211, 217);
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+        }
+        button {
+            margin: 2px;
+            margin-left: 0px;
+        }
+        button:hover {
+            background-color: beige;
+            color: blue;
+            border-radius: 3px;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border-radius: 6px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>PHIẾU KHẢO SÁT TRẢI NGHIỆM MUA SẮM</h1>
+        <form>
+
+            <fieldset>
+                <legend>1. Bạn cảm thấy không gian cửa hàng như thế nào?</legend>
+                <div>
+                    <input type="radio" id="r1" name="store_env" value="rất tốt" required>
+                    <label for="r1">Rộng rãi, thoải mái</label>
+                </div>
+                <div>
+                    <input type="radio" id="r2" name="store_env" value="tốt">
+                    <label for="r2">Tốt</label>
+                </div>
+                <div>
+                    <input type="radio" id="r3" name="store_env" value="bình thường">
+                    <label for="r3">Bình thường</label>
+                </div>
+                <div>
+                    <input type="radio" id="r4" name="store_env" value="chật hẹp">
+                    <label for="r4">Chật hẹp, không thoải mái</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Bạn thường mua sắm vào thời điểm nào? (Có thể chọn nhiều)</legend>
+               <div>
+                    <input type="checkbox" id="dautuan" value="dautuan" />
+                    <label for="dautuan">Đầu tuần </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="trongtuan" value="trongtuan" />
+                    <label for="trongtuan">Giữa tuần </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cuoituan" value="cuoituan" />
+                    <label for="cuoituan">Cuối tuần </label>
+        </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Bạn có góp ý nào để cải thiện dịch vụ và không gian cửa hàng?</legend>
+                <textarea id="feedback" name="feedback" rows="6" placeholder="Viết góp ý của bạn tại đây"></textarea>
+            </fieldset>
+
+            <button type="submit">GỬI</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
