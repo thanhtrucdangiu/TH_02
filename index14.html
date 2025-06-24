@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(251, 226, 230);
+      font-family: Arial, sans-serif;
+    }
+
+    .feedback-form {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color:black;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #f8c5d6;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: start;
+      gap: 5px;
+      font-size: 24px;
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      color: lightgray;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #c94f7c;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background-color: #a03c61;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="feedback-form">
+    <h2>Gửi Phản Hồi</h2>
+    <form>
+
+      <label>Đánh giá:</label>
+      <div class="stars">
+        <input type="radio" id="star1" name="rating" value="1" required />
+        <label for="star1">&#9733;</label>
+
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2">&#9733;</label>
+
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3">&#9733;</label>
+
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4">&#9733;</label>
+
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5">&#9733;</label>
+      </div>
+
+      <label for="message">Phản hồi của bạn:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Nhập ý kiến của bạn" required></textarea>
+
+      <label for="email">Email liên hệ:</label>
+      <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+      <button type="submit">Gửi phản hồi</button>
+    </form>
+  </div>
+
+</body>
+</html>
