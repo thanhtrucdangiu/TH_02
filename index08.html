@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <style>
+    body{
+      background-color: rgb(243, 193, 201);
+    }
+    h1{
+      color: black;
+      font-weight: bolder;
+      text-align: center;
+    }
     .video-container {
-      width: 100%;
-      max-width: 600px;
-      margin: 40px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     iframe {
       width: 100%;
       height: 340px;
       border: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
 <body>
+  <h1>MY VIDEO</h1>
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/R60WMJNoGsk" allowfullscreen></iframe>
-  </div>
 
-  <div class="video-container">
     <iframe src="https://www.youtube.com/embed/ajEpUnYK5Hw" allowfullscreen></iframe>
-  </div>
 
-  <div class="video-container">
     <iframe src="https://www.youtube.com/embed/U5bY_IjhYGg" allowfullscreen></iframe>
   </div>
 </body>
