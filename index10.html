@@ -5,60 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: rgb(251, 219, 224);
-        }
-        .portfolio{
-            display: flex;
-            gap: 10px
-        }
-        .project h3 {
-            margin-top: 16px;
-            color:rgb(110, 107, 107);
-            text-align: center ;
-        }
-        .project img {
-            width: 60%;
-            height: auto;
-            border-radius: 10px;
-            display: block;
-            margin: 0 auto; 
-        }
-        .project p {
-            font-size: 20px;
-            color:rgb(110, 107, 107);
-            margin-bottom: 12px;;
-            text-align: center;
-        }
-        h1{
-            text-align: center;
-            color: rgb(110, 107, 107);
-        }
-        .project a {
-            text-align: center;
-            font-size: 20px;
-            display: block;
-            text-align: center;
-            margin-top: 12px;
-        }
+    body {
+        background-color: rgb(251, 219, 224);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
 
-        a:hover{
-            color: skyblue;
-        }
-    </style>
+    h1 {
+        text-align: center;
+        color: black;
+        margin-bottom: 40px;
+        font-size: 36px;
+    }
+
+    .portfolio {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project1, .project2, .project3 {
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 30%;
+        min-width: 280px;
+    }
+
+    .project1 img, .project2 img, .project3 img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .project1 h3, .project2 h3, .project3 h3 {
+        margin-top: 0;
+        color: black;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .project1 p, .project2 p, .project3 p {
+        font-size: 16px;
+        color: black;
+        text-align: justify;
+        margin-bottom: 16px;
+    }
+
+    .project1 a, .project2 a, .project3 a {
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        margin-top: 12px;
+        color: rgb(14, 14, 228);
+        font-weight: bold;
+    }
+
+    .project1 a:hover, .project2 a:hover, .project3 a:hover {
+        color: #00aaff;
+    }
+
+  
+</style>
+
 </head>
 <body>
 <h1>Portfolio</h1>
 <div class="portfolio">
-    <div class="project">
-      <img src="https://i.pinimg.com/736x/f6/b5/fc/f6b5fc6abd076ad7eefde96ac29bbd8b.jpg" alt="Dự án">
-      <div class="project-content">
+    <div class="project1">
+        <img src="https://i.pinimg.com/736x/f6/b5/fc/f6b5fc6abd076ad7eefde96ac29bbd8b.jpg" width="560" height="315" alt="">
         <h3>Dự án quảng bá tiệm bánh</h3>
         <p>Thực hiện chiến dịch quảng bá cho tiệm bánh ngọt "Sweetie House" bao gồm thiết kế bộ nhận diện thương hiệu, poster, bài đăng mạng xã hội (Facebook/Instagram) và video ngắn.
             Sử dụng phong cách màu pastel dịu nhẹ, hình ảnh bánh ngọt hấp dẫn, ngôn từ gần gũi để thu hút đối tượng khách hàng trẻ.
             Kết hợp chiến thuật tặng mã giảm giá, mini game và hình ảnh review từ khách hàng để tăng tương tác và nhận diện thương hiệu.</p>
-        <a href="https://i.pinimg.com/736x/f6/b5/fc/f6b5fc6abd076ad7eefde96ac29bbd8b.jpg">Learn more</a>
-      </div>
+        <a href="https://i.pinimg.com/736x/f6/b5/fc/f6b5fc6abd076ad7eefde96ac29bbd8b.jpg"class="project1-link">Learn more</a>
+    </div>
+    
+    <div class="project2">
+        <img src="https://i.pinimg.com/736x/49/93/8f/49938f03151c676d858df393433ae933.jpg" width="560" height="315"  alt="">
+        <h3>Dự án xem và đánh giá phim</h3>
+        <p>Dự án "Xem và Đánh giá Phim" nhằm tạo ra một cộng đồng yêu điện ảnh, nơi người tham gia có thể cùng nhau xem phim, trao đổi cảm nhận và viết đánh giá chất lượng về các bộ phim thuộc nhiều thể loại khác nhau. Qua đó, nâng cao khả năng phân tích, tư duy phản biện, kỹ năng viết và sự hiểu biết về nghệ thuật điện ảnh.</p>
+        <a href="https://i.pinimg.com/736x/49/93/8f/49938f03151c676d858df393433ae933.jpg" class="project2-link">Learn more</a>
+    </div>
+    <div class="project3">
+        <img src="https://i.pinimg.com/736x/c2/34/4c/c2344cb6a90bd0b7c29aa91091addcf0.jpg" width="560" height="315" alt="">
+        <h3>Dự án xây dựng thực đơn healthy</h3>
+        <p>Dự án “Xây dựng Thực đơn Healthy” hướng đến việc tạo ra những thực đơn ăn uống lành mạnh, cân bằng dinh dưỡng, phù hợp với lối sống hiện đại. Thông qua việc nghiên cứu nhu cầu dinh dưỡng và xu hướng ăn uống hiện nay, dự án thiết kế các set menu dễ làm, nguyên liệu dễ tìm nhưng vẫn đảm bảo sức khỏe, hỗ trợ giảm cân, giữ dáng hoặc tăng cường sức đề kháng. Dự án không chỉ giúp người tham gia hình thành thói quen ăn uống khoa học mà còn góp phần lan tỏa lối sống tích cực, bền vững trong cộng đồng.</p>
+        <a href="https://i.pinimg.com/736x/c2/34/4c/c2344cb6a90bd0b7c29aa91091addcf0.jpg" class="project3-link">Learn more</a>
     </div>
 </div>
 </body>
